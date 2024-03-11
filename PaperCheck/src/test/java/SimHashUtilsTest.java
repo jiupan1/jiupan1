@@ -1,6 +1,6 @@
 import org.junit.Test;
 import utils.SimHashUtils;
-import utils.TxtInOutils;
+import utils.TxtInOutUtils;
 
 public class SimHashUtilsTest {
 
@@ -16,8 +16,8 @@ public class SimHashUtilsTest {
 
     @Test
     public void getSimHashTest() {
-        String str0 = TxtInOutils.readTxt("D:/test/orig.txt");
-        String str1 = TxtInOutils.readTxt("D:/test/orig_0.8_add.txt");
+        String str0 = TxtInOutUtils.readTxt("D:/test/orig.txt");
+        String str1 = TxtInOutUtils.readTxt("D:/test/orig_0.8_add.txt");
         System.out.println(SimHashUtils.getSimHash(str0));
         System.out.println(SimHashUtils.getSimHash(str1));
     }

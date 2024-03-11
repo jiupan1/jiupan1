@@ -1,10 +1,12 @@
 package utils;
-
+/**
+ * @author  Whz1
+ */
 public class HammingUtils {
     /*
      * 输入两个simHash值，计算它们的海明距离
-     simHash1
-     simHash2
+     @param  simHash1
+      @param simHash2
     海明距离
      */
     public static int getHammingDistance(String simHash1, String simHash2) {
@@ -33,6 +35,6 @@ public class HammingUtils {
         // 通过 simHash1 和 simHash2 获得它们的海明距离
         int distance = getHammingDistance(simHash1, simHash2);
         // 通过海明距离计算出相似度，并返回
-        return 0.01 * (100 - distance * 100 / 128);
+        return 0.01 * (100 - (double) (distance * 100) / 128);
     }
 }
